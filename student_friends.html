@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Masterclass - Friends{% endblock %}
+
+{% block content %}
+<script src="/static/student_friends.js"></script>
+<div class="friends-page">
+
+  <!-- Added Friends -->
+  <section class="friends-framed-section">
+    <h2 class="section-title">Your Friends</h2>
+    <ul id="user-list" class="user-list">
+    </ul>
+  </section>
+
+  <!-- Search + Results -->
+  <section class="search-framed-section">
+    <div class="search-header">
+      <h2 class="section-title">Find Friends</h2>
+      <input id="student-search-box" type="text" class="search-box integrated" placeholder="Search students" />
+    </div>
+
+    <ul id="search-results" class="user-list">
+    </ul>
+  </section>
+
+</div>
+{% endblock %}

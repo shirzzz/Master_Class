@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Masterclass - Student Login{% endblock %}
+
+{% block header %}{% endblock %}
+
+{% block content %}
+<form class="login-form" method="post" action="/login/student">
+    <h2 class="login-title">Student Login</h2>
+
+    {% if login_failed %}
+    <div class="login-error">Incorrect ID and/or password</div>
+    {% endif %}
+
+    <div class="form-group">
+        <label for="user-id">ID</label>
+        <input type="text" id="user-id" name="user-id" placeholder="ID" required />
+    </div>
+
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Password" required />
+    </div>
+
+    <button type="submit" class="login-button">Login</button>
+</form>
+{% endblock %}

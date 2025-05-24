@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Masterclass - Match Classes{% endblock %}
+
+{% block content %}
+<div class="match-input-page">
+  <h2 class="match-title">Match Classes</h2>
+
+  <form method="post" action="/match">
+    <div class="form-group">
+      <label for="class-count" class="slider-label">Number of Classes</label>
+      <input
+        type="number"
+        id="class-count"
+        name="class_count"
+        class="number-input"
+        min="1"
+        placeholder="Enter a positive number"
+        required
+      />
+    </div>
+
+    <button type="submit" class="match-button">Match Classes</button>
+  </form>
+</div>
+{% endblock %}

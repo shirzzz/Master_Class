@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Masterclass - Welcome{% endblock %}
+
+{% block content %}
+<div class="welcome-container">
+    <h1 class="welcome-title">Welcome to Masterclass</h1>
+    <div class="button-group">
+        <a href="/login/student" class="welcome-button student-button">Student Login</a>
+        <a href="/login/teacher" class="welcome-button teacher-button">Teacher Login</a>
+    </div>
+</div>
+{% endblock %}
